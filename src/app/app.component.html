@@ -1,0 +1,225 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <button mat-button>Enviar</button> -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <img src="../assets/img/logosdc.png" width="50px;" alt="">
+    <span class="example-spacer"></span>
+
+    <button mat-button>Nosotros</button>
+    <button mat-button>Equipo</button>
+  <!-- <button mat-button>Miembros</button> -->
+    <button mat-button>Proyectos</button>
+    <button mat-button>Reglamento</button>
+    <button mat-button>Suscripción</button>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item disabled>
+        <mat-icon>input</mat-icon>
+        <span>Ingresar</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Salir</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div>&nbsp;</div>
+
+<section>
+  <div class="container">
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <mat-card style="text-align: center;" color="primary">
+      <mat-card-content>
+      <mat-card-title>Bienvenido a la Comunidad SDC Chimbote</mat-card-title>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      </mat-card-content>
+      <button mat-raised-button (click)="show()" color="primary">Unirme a la comunidad</button>
+    </mat-card>
+    <mat-card *ngIf="msj">
+      <h1>{{ msj }}.</h1>
+    </mat-card>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+</section>
+
+<div>&nbsp;</div>
+<section class="nosotros">
+<div>&nbsp;</div>
+<div class="container">
+    <mat-card>
+      <mat-card-title style="text-align: center;">Nosotros</mat-card-title>
+        <mat-card>
+          <mat-card-title>La Comunidad SDC Chimbote</mat-card-title>
+          <mat-card-content>
+            <mat-card-subtitle>Es una comunidad creada para impulsar una Industria del Software en Chimbote, permitirá a los jóvenes unir esfuerzos para realizar muchas actividades ligadas a la tecnología, también se podrán realizar cursos, conferencias y todo tipo de actividad que ayude a impulsar la Industria del Software, motivar a los empresarios a invertir en Tecnología, motivar a las Instituciones Públicas y Privadas a invertir en el uso Software, así como también incentivar a que las grandes empresas de software del mundo inviertan y brinden muchas facilidades para poder utilizar sus tecnologías. La comunidad tendrá actividades para poder unir a las Universidades, Institutos, Empresas Públicas y Privadas así como al Colegio de Ingenieros, Cámara de Comercio del Santa y a toda Institución que quiera sumarse a este gran esfuerzo de crear nuevas fuentes de trabajo ligadas a la Tecnología.</mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+        <div>&nbsp;</div>
+        <mat-card>
+          <mat-card-title>Objetivo</mat-card-title>
+          <mat-card-content>
+            <mat-card-subtitle>Impulsar la creación de una gran Industria de Software en Chimbote</mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+        <div>&nbsp;</div>
+        <mat-card>
+          <mat-card-title>Actividades</mat-card-title>
+          <mat-card-content>
+            <mat-list role="list">
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Impulsar los Principios y Valores en la Juventud de Chimbote.</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Organizar Eventos de Tecnología.</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Participar en el Evento anual de ChimboTech.</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Recibir diferentes charlas orientadas a mejorar su profesión</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Gestionar convenios con Empresas Grandes de Tecnología (Microsoft, Google, SAP, Oracle, Dell, Apple, RedHat, etc.)</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Solicitar inversión para la creación de la Industria del Software a las Empresas Privadas.</mat-list-item>
+              <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Difundir los objetivos y metas de la Comunidad en su
+              entorno.</mat-list-item>
+            </mat-list>
+          </mat-card-content>
+        </mat-card>
+    </mat-card>
+</div>
+<div>&nbsp;</div>
+</section>
+<div>&nbsp;</div>
+
+<div class="container">
+  <mat-card>
+    <mat-card-title style="text-align: center;">Equipo</mat-card-title>
+  <mat-grid-list cols="4" rowHeight="2:1">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Victor Aguilar</mat-card-title>
+        <mat-card-subtitle>Presidente</mat-card-subtitle>
+        <mat-card-content>
+          Egresado de Ing. de Sistemas
+          Universidad Nacional del Santa
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Isaac Aguirre</mat-card-title>
+        <mat-card-subtitle>Vicepresidente</mat-card-subtitle>
+        <mat-card-content>
+          Egresado de Ing. de Sistemas
+          Universidad Nacional del Santa
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Kriss Miñano</mat-card-title>
+        <mat-card-subtitle>Secretaria</mat-card-subtitle>
+        <mat-card-content>
+          Egresado de Ing. de Sistemas
+          Universidad Nacional del Santa
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Brandon Palacios</mat-card-title>
+        <mat-card-subtitle>Colaborador</mat-card-subtitle>
+        <mat-card-content>
+          Egresado de Ing. de Sistemas - Universidad Nacional del Santa
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  </mat-card>
+</div>
+
+<div>&nbsp;</div>
+<section class="bg">
+<div>&nbsp;</div>
+<div class="container">
+  <mat-card>
+    <mat-card-title style="text-align: center;">Proyectos</mat-card-title>
+  <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Proyecto 1</mat-card-title>
+        <mat-card-subtitle>IOT</mat-card-subtitle>
+        <mat-card-content>
+          Descripción de proyecto
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Proyecto 2</mat-card-title>
+        <mat-card-subtitle>App web</mat-card-subtitle>
+        <mat-card-content>
+          Descripción de proyecto
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <mat-card-title>Proyecto 3</mat-card-title>
+        <mat-card-subtitle>Aplicativo móvil</mat-card-subtitle>
+        <mat-card-content>
+          Descripción de proyecto
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  </mat-card>
+</div>
+<div>&nbsp;</div>
+</section>
+<div>&nbsp;</div>
+
+<div class="container">
+  <mat-card>
+    <mat-card-title style="text-align: center;">Reglamento</mat-card-title>
+    <mat-card-content>
+      <mat-list role="list">
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Para ser miembro de la comunidad primero deben
+        registrarse en la página oficial del SDC.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Se debe tener conocimientos a fines de las Tecnologías
+        de la Información.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Sentirse identificado con los objetivos del SDC.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Los miembros de la comunidad deben participar como
+        mínimo un 50% de todas las actividades.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Participar activamente en las comisiones de trabajo
+        que se formen dentro de la comunidad.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Capacitarse en temas de Tecnología.</mat-list-item>
+        <mat-list-item role="listitem"><mat-icon>turned_in</mat-icon>Difundir los objetivos y metas de la Comunidad en su
+        entorno.</mat-list-item>
+      </mat-list>
+    </mat-card-content>  
+  </mat-card>
+</div>
+
+<div>&nbsp;</div>
+<section class="indigo">
+<div>&nbsp;</div>
+<div class="container">
+  <mat-card>
+    <mat-card-title style="text-align: center;">Suscribirme</mat-card-title>
+    <mat-form-field>
+      <input matInput [(ngModel)]="answer" placeholder="Correo electrónico">
+    </mat-form-field>
+    <br>
+    <button mat-raised-button (click)="showAnswer()" color="primary">Suscribirme</button>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+  </mat-card>
+  <mat-card *ngIf="answerDisplay">
+    <h1>Te enviaremos información a {{ answerDisplay }}.</h1>
+  </mat-card>
+</div>
+<div>&nbsp;</div>
+</section>
+<div>&nbsp;</div>
+
+
+

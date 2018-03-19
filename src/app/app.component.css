@@ -1,0 +1,19 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.bg{
+	background: url(http://angular-landing.mhrafi.com/home-bg.1e271979b7c657dee1b0.jpg) no-repeat 50%;
+}
+
+.indigo{
+	background: url(https://i.hipertextual.com/2017/06/28/indigo-pentagonal-background.png) no-repeat 50%;
+}
+
+.nosotros{
+	background:#3F51B5;
+}
