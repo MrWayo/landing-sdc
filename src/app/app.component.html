@@ -1,16 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- <button mat-button>Enviar</button> -->
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <img src="../assets/img/logosdc.png" width="50px;" alt="">
+<mat-toolbar color="basic">
+  <mat-toolbar-row id="home-header" class="header-fixed">
+    <img src="https://raw.githubusercontent.com/MrWayo/landing-sdc/master/assets/img/logo_sdc_landing.png" width="50px;" alt="">
     <span class="example-spacer"></span>
 
-    <button mat-button>Nosotros</button>
-    <button mat-button>Equipo</button>
+    <button mat-button class="b-header">Nosotros</button>
+    <button mat-button class="b-header">Equipo</button>
   <!-- <button mat-button>Miembros</button> -->
-    <button mat-button>Proyectos</button>
-    <button mat-button>Reglamento</button>
-    <button mat-button>Suscripción</button>
+    <button mat-button class="b-header">Proyectos</button>
+    <button mat-button class="b-header">Reglamento</button>
+    <button mat-button class="b-header">Suscripción</button>
     <button mat-icon-button [matMenuTriggerFor]="menu">
       <mat-icon>more_vert</mat-icon>
     </button>
@@ -26,31 +26,24 @@
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
-
-<div>&nbsp;</div>
-
-<section>
-  <div class="container">
+<section class="bg-intro">
+  <div class="container" fxlayout="column" fxlayoutwrap="nowrap" style="text-align: center;">
+    <div class="home-intro-subtitle">Hola TI lover.</div>
+    <h2 class="home-intro-title">¿Te gustaría formar parte de la Comunidad SDC Chimbote?</h2>
+    <p class="home-intro-text">Si te gustan las tecnologías de la información, ciencias de la computación, internet de las cosas y 
+    estudias una carrera profesional, técnica o eres autodidacta, esta comunidad es para ti.</p>
+    <button mat-raised-button class="mat-lg-button intro-cta">
+      <mat-icon>whatshot</mat-icon>
+      <span>Deseo unirme</span>
+    </button>
     <div>&nbsp;</div>
-    <div>&nbsp;</div>
-    <mat-card style="text-align: center;" color="primary">
-      <mat-card-content>
-      <mat-card-title>Bienvenido a la Comunidad SDC Chimbote</mat-card-title>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      </mat-card-content>
-      <button mat-raised-button (click)="show()" color="primary">Unirme a la comunidad</button>
-    </mat-card>
-    <mat-card *ngIf="msj">
-      <h1>{{ msj }}.</h1>
-    </mat-card>
     <div>&nbsp;</div>
     <div>&nbsp;</div>
   </div>
 </section>
 
 <div>&nbsp;</div>
-<section class="nosotros">
+<section>
 <div>&nbsp;</div>
 <div class="container">
     <mat-card>
@@ -220,6 +213,5 @@
 <div>&nbsp;</div>
 </section>
 <div>&nbsp;</div>
-
 
 

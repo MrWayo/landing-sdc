@@ -7,13 +7,88 @@
 }
 
 .bg{
-	background: url(http://angular-landing.mhrafi.com/home-bg.1e271979b7c657dee1b0.jpg) no-repeat 50%;
+	background: url(https://raw.githubusercontent.com/MrWayo/landing-sdc/master/assets/img/bg.jpg) no-repeat 50%;
+}
+
+.bg-intro{
+	background: url(https://raw.githubusercontent.com/MrWayo/landing-sdc/master/assets/img/bg.jpg);
+	background-size: cover;
+	padding: 80px 0 0;
+	color: #fff;
+	overflow: visible;
 }
 
 .indigo{
-	background: url(https://i.hipertextual.com/2017/06/28/indigo-pentagonal-background.png) no-repeat 50%;
+	background: url(https://raw.githubusercontent.com/MrWayo/landing-sdc/master/assets/img/pentagonal-bg.png) no-repeat 50%;
 }
 
 .nosotros{
 	background:#3F51B5;
 }
+/*
+.google-shadow {
+  -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+	box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+}
+*/
+.header-fixed{
+	position: fixed !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #fff;
+	/*padding: 0 !important;*/
+	box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+	-webkit-animation: .6s slideDown forwards;
+	animation: .6s slideDown forwards;
+}
+
+#home-header{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*padding: 22px 0;*/
+	transition: padding .3s linear;
+	-webkit-transition: padding .3s linear;
+	z-index: 999;
+}
+
+mat-toolbar-row > .b-header{
+	padding: 16px 16px;
+}
+
+.home-intro-subtitle {
+    margin: 0 0 22px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.home-intro-title {
+    margin: 0 0 24px;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 54px;
+    text-shadow: 0 4px 4px rgba(0,0,0,.22);
+}
+
+.home-intro-text {
+    max-width: 570px;
+    margin: 0 auto 24px;
+}
+
+.intro-cta {
+    /*max-width: 180px;
+    margin: 0 auto;*/
+    color: rgba(0,0,0,.87);
+	background-color: #fff;
+}
+.mat-lg-button{
+	padding: 0 32px !important;
+    font-size: 18px;
+    line-height: 56px !important;
+}
+	
